@@ -25,7 +25,9 @@ class HelloWorld:
         eyes.check("Login Window test", Target.window())
 
         # End the test.
-        eyes.close()
+        results = eyes.close(False)
+
+        print(results)
 
     finally:
 
