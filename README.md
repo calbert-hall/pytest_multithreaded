@@ -1,18 +1,14 @@
 # Applitools Tutorial - Selenium Python
 
-## Run the Example Project
-1. Download the example
-    * Option 1: `git clone https://github.com/applitools/tutorial-selenium-python.git`
-    * Option 2: [Download it](https://github.com/applitools/tutorial-selenium-python/archive/master.zip) as a Zip file and extract it
-2. Navigate to the `tutorial-selenium-python` folder
-3. Set up environment variable `APPLITOOLS_API_KEY` with your own API key.
-    * Login to Applitools > Click on the Person icon > My API Key
-    * Linux/Mac: export APPLITOOLS_API_KEY=<your_key>
-    * Windows: set APPLITOOLS_API_KEY=<your_key>
-4. Install Python package requirements
+## Run the Python Multithreaded Tests
+1. Clone repo, setup Applitools API Key.
+
+2. Install Python package requirements
     * `pip3 install -r requirements.txt`
-5. Run the tests
+3. Run the tests - Single threaded option
     * `pytest tutorial.py`
+4. Run the test - Multiple threads using xDist
+    * `pytests tuturial.py -n [number_of_workers]
 
 
 ## More Info
